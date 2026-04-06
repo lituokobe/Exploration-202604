@@ -1,4 +1,4 @@
-# Skill: Equity Signal Analyzer
+# Skill: equity_signal_analyzer
 
 ## Description
 Generate technical trading signals for a given stock ticker.
