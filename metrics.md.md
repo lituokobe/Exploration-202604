@@ -1,0 +1,12 @@
+| Metric           | Type            | What it Measures              | Key Idea              | When to Use                 | Limitations              | Faithfulness Relevance (RAG)                   |
+|------------------|-----------------|-------------------------------|-----------------------|-----------------------------|--------------------------|------------------------------------------------|
+| Correctness      | General         | Whether output is “correct”   | Often human judgment  | LLM / RAG evaluation        | Not standardized         | ⭐⭐⭐ High (if defined as grounded correctness)  |
+| Accuracy         | Classification  | Overall correct predictions   | (TP + TN) / total     | Balanced datasets           | Misleading if imbalanced | ❌ None                                         |
+| Recall           | Classification  | Ability to find positives     | TP / (TP + FN)        | Missing positives is costly | Ignores false positives  | ❌ None                                         |
+| F1 Score         | Classification  | Balance of precision & recall | Harmonic mean         | Imbalanced datasets         | Ignores true negatives   | ❌ None                                         |
+| ROC Curve        | Classification  | Performance across thresholds | TPR vs FPR            | Model comparison            | Not a single number      | ❌ None                                         |
+| AUC              | Classification  | Overall ranking ability       | Area under ROC        | Imbalanced data             | Less intuitive           | ❌ None                                         |
+| BLEU             | Text Generation | N-gram precision overlap      | Exact match precision | Machine translation         | Ignores semantics        | ⭐ Low                                          |
+| ROUGE            | Text Generation | N-gram recall overlap         | Coverage of reference | Summarization               | Ignores meaning          | ⭐⭐ Medium (if reference is grounded)           |
+| BERTScore        | Text Generation | Semantic similarity           | Embedding similarity  | LLM evaluation              | Compute-heavy            | ⭐⭐⭐ Medium-High                                |
+| Perplexity (PPL) | Language Model  | Prediction uncertainty        | Lower = better        | LM training                 | Not human-aligned        | ❌ None                                         |

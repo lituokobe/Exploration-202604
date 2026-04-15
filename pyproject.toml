@@ -8,4 +8,5 @@ dependencies = [
     "langchain-openai>=1.1.12",
     "load-dotenv>=0.1.0",
     "numpy>=2.4.4",
+    "vector-graph-rag>=0.1.3",
 ]
